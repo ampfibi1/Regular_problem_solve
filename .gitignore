@@ -34,3 +34,22 @@
 
 #distint file
 *.log
+
+# Ignore merge conflict files
+*.orig
+*.rej
+
+# Ignore temporary editor/merge tool files
+*.bak
+*.tmp
+*.swp
+
+A_Question_mark.cpp
+A_array_disibility.cpp
+A_make_all_equal.cpp
+A_profitable_interest_rate.cpp
+B_Bying_lamonade.cpp
+B_Game_with_Door.cpp
+B_Removals_Game.cpp
+B_Sakura_and_water.cpp
+B_minimize_oneness.cpp
