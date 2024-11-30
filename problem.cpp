@@ -2,5 +2,5 @@
 using namespace std; 
 
 int main(){
-	cout << 4%2 ;
+	cout << 1002%(10000/100) ;
 }
