@@ -67,7 +67,7 @@ int main(){
     }*/
     //insertion sort
     /*for(int i=1; i<N; ++i)
-        for(int j=i; j>=0; --j)
+        for(int j=i; j>0; --j)
             if(a[j]<a[j-1])
                 swap(a[j],a[j-1]);
             else 
