@@ -10,7 +10,7 @@ void solve(){
 		sum += x ; 
 	}
 	if(sum%n==0)cout << "YES\n" ;
-	else cout << "NO\n" ; 
+	else cout << "NO\n" ;
 }
 int main(){
 	ios::sync_with_stdio(0); cin.tie(0);
