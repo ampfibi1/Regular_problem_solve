@@ -11,7 +11,7 @@ void solve(){
 	else {
 		if(a[0]%8==1){
 			a[0]%=8;
-			cnt++;
+			cdn
 			--a[0]; 
 		}
 		else sum +=a[0];
