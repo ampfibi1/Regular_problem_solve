@@ -21,7 +21,7 @@ void solve(){
 	}
 	for(int i=0; i<n; ++i){
 		if(ch!=chMin){
-			if(chMin==s[i]){
+			if(chMin==s[i]){//when both are same
 				s[i]=ch ;
 				break;
 			}
