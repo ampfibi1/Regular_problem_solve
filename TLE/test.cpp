@@ -11,16 +11,10 @@ void solve(){
 		m[s[i]]++;
 	} 
 	int odd = 0 ;
-	for(auto x:m){
+	for(auto x:m)
 		if(x.second&1)odd++;
-	}
-	int cnt = k-odd ;  
-	k -= odd ;
-	if(cnt>=-1) cout << "YES\n" ;
-	else {
-		cout << "NO\n";
-	} 
-	// cout << cnt << endl*/; 
+	
+	cout << (k-odd>=-1)?"YES\n" : "NO\n";
 }
 int main(){
 	int tt ; cin >> tt ; while(tt--) solve();
