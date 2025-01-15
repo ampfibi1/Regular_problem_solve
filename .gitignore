@@ -46,5 +46,5 @@
 *.swp
 
 # input output
-inputf.in
-output.in
+*.in
+*.in
