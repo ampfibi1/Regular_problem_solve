@@ -19,12 +19,9 @@ int main(){
 	string s[t] ; 
 	for(auto &x:s) cin >> x ; 
 
+	string ans[t] ;
 	for(int i=0; i<t; ++i){
-		int cnt = 0 ; 
-		for(int j=0; j<t; ++j){
-			if(s[i]==s[j])cnt++;
-		}
-		freq[i] = cnt ; 
+		
 	}		 
 	for(int x:freq) cout << x << " " ; 
 }
