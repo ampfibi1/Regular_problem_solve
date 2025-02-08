@@ -5,7 +5,7 @@ using namespace std;
 void solve(){
 	ll n ; cin >> n ; 
 	ll min = n/6ll , max = n/4ll ; 
-	if(n&1) {cout << -1 << endl ; return ;}
+	if(n&1 || n<4) {cout << -1 << endl ; return ;}
 	cout << (n+5)/6 << " " << n/4 << endl ; 
 }
 int main(){
