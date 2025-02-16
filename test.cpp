@@ -6,7 +6,7 @@ using namespace std;
 #define readArray(n)	   int a[n] ; for(int &x:a) cin >> x ; 
 
 int main(){
-	cout << 387420489 % 6 << endl ; 
+	cout << x % k == 0 ? x%k: k-x%k << endl ; 
 	cout << 12345 % 6 << endl ; 
 	cout << 15116544 / 6 << endl ;
 }

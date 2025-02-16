@@ -8,7 +8,7 @@ using namespace std;
 
 void solve(){
 	rd(int,n);rda(int,a); 
-	map<int,int> m ; 
+	unordered_map<int,int> m ; 
 	for(int &x:a) m[x]++;
 
 	ll l =-1, r=-1 , curr=0 , mx = 0 ;

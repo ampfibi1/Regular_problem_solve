@@ -7,22 +7,18 @@ using namespace std;
 #define prnt(type,arr) for(type &x:arr) cout << x << " " ; cout << endl ; 
 
 void solve(){
-	rd(int,n);rda(int,a); 
-	map<int,int> m ; 
-	for(int &x:a) m[x]++;
+	rd(int,n); rd(int,k); rda(int,a);
 
-	ll l =-1, r=-1 , curr=0 , mx = 0 ;
-
-	for(int i=0; i<n; i++){
-		if(m[a[i]]==1) curr++; 
-		else curr = 0 ; 
-		if(mx<curr){
-			r = i ; 
-			l = i - curr + 1 ;
-			mx = curr ;
-		}
-	}   
-	if(!mx) cout << 0 << endl ; 
-	else cout << l+1 << " " << r+1 << endl ; 
+	int even = 0 , mn = k;
+	for(int &x:a){
+		if(x%2==0) even++;
+		mn = min(mn,(x%k==0?0:k-x%k));
+	}
+	if(k==4){
+		if(even>=2) mn = 0 ;
+		else if(even==1) mn = min(mn,1);
+		else mn = min(mn,2) ;
+	}
+	cout << mn << endl; 
 }
 mt
