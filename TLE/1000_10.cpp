@@ -8,7 +8,7 @@ using namespace std;
 
 ll subCombination(ll cnt,ll k){
 	return ((cnt - k +1)*(cnt - k +2)/2);
-}
+} 
 void solve(){
 	rd(int,n) ; rd(char,ch) ; rd(string,s);
 	if(ch=='g'){cout << 0 << endl ; return ; }
