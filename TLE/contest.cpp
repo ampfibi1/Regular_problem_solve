@@ -7,7 +7,17 @@ using namespace std;
 #define prnt(type,arr) for(type &x:arr) cout << x << " " ; cout << endl ; 
 
 void solve(){
-	rd(int,n);rda(int,a); 
+	rd(int,a);rd(int,b); rd(int,n); 
+	bool f = true ;
+	int cnt=0;
+	while(f){
+		if(a>b) b += a;
+		else a += b ;
+		cnt++;
+		if(n<max(a,b)) f=false;
+	}
+	cout << cnt << endl; 
+	/*rd(int,n);rda(int,a); 
 	map<int,int> m ; 
 	for(int &x:a) m[x]++;
 
@@ -23,6 +33,6 @@ void solve(){
 		}
 	}   
 	if(!mx) cout << 0 << endl ; 
-	else cout << l+1 << " " << r+1 << endl ; 
+	else cout << l+1 << " " << r+1 << endl ; */
 }
 mt
