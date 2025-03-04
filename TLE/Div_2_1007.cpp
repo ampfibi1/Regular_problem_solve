@@ -15,17 +15,19 @@ using namespace std;
 // 	else cout << "NO\n" ; 
 // }
 //B
-bool isFractional(double n) {
-    return n != trunc(n);
-}
 void solve(){
-	rd(ll,n);
-	int sum = n*(n+1)/2 ;
-	double root = sqrt(sum) ; 
-
-	if(!isFractional(root)) {cout << -1 << endl; } 
-	else {
-		
-	} 
+	rd(ll,n); 
+	ll sum = n*(n+1)/2 ; 
+	if(sqrt(sum)-(ll)sqrt(sum) == 0) cout << -1 << endl ; 
+	else{
+		for(ll i=1; i<=n; i++){
+			sum = i*(i+1)/2 ; 
+			if(sqrt(sum)-(ll)sqrt(sum) == 0){
+				cout << i+1 << " " << i << " "; 
+				i++;
+			}else cout << i << " " ; 
+		}
+		cout << endl ; 
+	}
 }
 mt
