@@ -31,7 +31,7 @@ void solve(){
     // cout << a << sp << a.size() << endl ;
     // cout << b << sp << b.size() << endl ; 
 
-    int cnt = 0 ,mx = 0; 
+    /*int cnt = 0 ,mx = 0; 
     for(int i=0; i<a_s; i++){
         for(int j=0; j<b_s; j++){
             if(a[i]==b[j]){
@@ -51,10 +51,10 @@ void solve(){
 
         }
     }
-    // cout << mx << endl ; 
+    // cout << mx << endl ; */
 
     //Lcs
-   /* vector<vector<int>> dp(a_s+1,vector<int>(b_s+1,0)); 
+    vector<vector<int>> dp(a_s+1,vector<int>(b_s+1,0)); 
     int mx = 0 ;
 
     for(int i=1; i<=a_s; i++){
@@ -65,7 +65,7 @@ void solve(){
             }
         }
     }
-    // cout << mx << endl ; */
+    // cout << mx << endl ; 
     cout << a_s-mx+b_s-mx << nl ; 
 }
 int main(){
