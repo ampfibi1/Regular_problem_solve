@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>
+/*#include<bits/stdc++.h>
 using namespace std; 
 
 //read and print data
@@ -55,4 +55,26 @@ void solve(){
 int main(){
 	ios::sync_with_stdio(0); cin.tie(0);
 	int t ;cin>>t ;while(t--)solve();
+}*/
+#include <bits/stdc++.h>
+using namespace std;
+
+string to_Upper(string& s){
+    for(char &x:s) x = toupper(x);
+    return s;
+}
+string toSetUpper(string& s){
+    s[0] = (s[0]>96?toupper(s[0]):tolower(s[0]));
+    for(int i=1; i<s.size(); i++) s[i] = tolower(s[i]);
+    return s;
+}
+int main() {
+    string s; cin >> s ;
+    bool sameAsPre =false;
+    for(int i=1; i<s.size(); i++){
+        if(s[i]>96){ sameAsPre = true; break;}        
+    }
+     cout <<  (sameAsPre?s:toSetUpper(s)) << endl ;
+    
+    return 0 ;
 }

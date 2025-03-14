@@ -1,10 +1,17 @@
-#include<bits/stdc++.h>
-using namespace std; 
+#include <bits/stdc++.h>
+using namespace std;
 
-int main(){
-	for(int i=0; i<2; i++){
-		for(int j=3; j<4; j++)
-			if(j==3) break;
-		cout << i << endl ; 
-	}
+int main() {
+    string str;
+    getline(cin, str); 
+
+    if (!str.empty()) {
+        str[0] = toupper(str[0]);  
+      }
+    for(int i=1;i<str.length();i++)
+    {
+        str[i] = tolower(str[i]);
+    }
+    cout << str << endl; 
+    return 0 ;
 }
